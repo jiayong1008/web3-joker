@@ -1,0 +1,9 @@
+exit
+exit()
+jotContract.totalSupply()
+jotContract.totalSupply
+jotContract.owner()
+var jotContract = await hre.ethers.getContractAt('JokeToken', '0x8BCbD7aa39ECf529b02C3eA75Fb3F6bDD752cd8c');
+jotAbi = jotAbi.abi
+jotAbi = abi.abi;
+var jotAbi = require('./artifacts/contracts/JokeToken.sol/JokeToken.json');

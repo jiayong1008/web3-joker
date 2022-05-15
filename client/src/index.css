@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ========== GENERAL =========== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+}
+
+:root {
+  --bg-hue: 253;
+  --primary-hue: 225;
+  --secondary-hue: 339;
+
+  --colour-bg: #0f0e13;
+  --colour-white: hsl(0, 0%, 100%);
+  --colour-light: hsla(0, 0%, 100%, 0.6);
+  --transition: all 600ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--colour-white);
+  font-family: "Poppins", sans-serif;
+}
+
+.gradient-bg {
+  background-color:var(--colour-bg);
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(var(--bg-hue),16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(var(--primary-hue),39%,30%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(var(--secondary-hue),49%,30%,1) 0, transparent 50%);
+}
+
+.logo {
+  letter-spacing: 1.6px;
+  font-style: italic;
+  width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: fit-content;
+  }
+}
+
+.btn-primary {
+  font-weight: 500;
+  background: #2952e3;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: #2546bd;
+}
+
+
+/* .btn-grad {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)} */
+.btn-grad {background-image: linear-gradient(to right, hsla(var(--secondary-hue),49%,30%,1) 0%, hsla(var(--primary-hue),39%,30%,1) 51%, hsla(var(--bg-hue),16%,7%,1) 100%)}
+.btn-grad {
+   font-weight: 500;
+   padding: 10px 30px;
+   text-align: center;
+   transition: var(--transition);
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 5px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-gradient {
+  background-color: var(--colour-white);
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========== WELCOME SECTION ============== */
+.trade__container {
+  min-height: 70vh;
+}
+
+/* WHEEL SVG ANIMATION */
+#wheel {
+ animation: wheel 13s linear infinite;
+ transform-origin: center;
+ transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#balloon1 {
+  animation: balloon1 8s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes balloon1 {
+  0% {
+    transform: rotateZ(0deg) translateX(0);
+  }
+  50% {
+    transform: rotateZ(-10deg) translateX(-50%);
+  }
+  100% {
+    transform: rotateZ(0deg) translateX(0);
+  }
+}
+
+#balloon3 {
+  animation: balloon3 7.5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes balloon3 {
+  0% {
+    transform: rotateZ(0deg) translateX(0);
+  }
+  50% {
+    transform: rotateZ(10deg) translateX(50%);
+  }
+  100% {
+    transform: rotateZ(0deg) translateX(0);
+  }
+}
+
+/* TRADE */
+.trade__card {
+  width: 80%;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .trade__card {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
