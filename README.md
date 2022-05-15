@@ -1,5 +1,5 @@
 # JokeToken
-An ERC20 token where users can buy, sell, or transfer through the frontend interface.   
+An ERC20 token where users can buy, sell, or transfer through the [frontend interface](https://jiayong1008.github.io/web3-joker/).   
 Current Token Network: `Ropsten` Test Net    
 Token Contract Address: `0x0218812D96E61c5854aA75FE6900B0E4e8d4ec8A`
 
@@ -40,7 +40,7 @@ I have an idea of developing a web3 peer-to-peer casino where players can play a
     - Smart contract would earn 0.05 JOT. (2.5% interest)
 10. Players are allowed to burn their JOT anytime to withdraw their Eth.
     - 1 JOT = 1 Eth
-    - Players need to be fully aware os the possibility of impermanent loss.
+    - Players need to be fully aware of the possibility of impermanent loss.
 
 ## Technical Requirements ⚙️
 - We will need a smart contract written in Solidity to program the logics of the casino.
